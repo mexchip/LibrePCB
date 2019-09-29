@@ -54,6 +54,15 @@ FirstRunWizard::~FirstRunWizard() noexcept {
 }
 
 /*******************************************************************************
+ *  Setters
+ ******************************************************************************/
+
+void FirstRunWizard::setWorkspacePath(const FilePath& fp) noexcept {
+  setField("OpenWorkspacePath", fp.toStr());
+  setStartId(Page_WorkspaceSettings);
+}
+
+/*******************************************************************************
  *  Getters
  ******************************************************************************/
 

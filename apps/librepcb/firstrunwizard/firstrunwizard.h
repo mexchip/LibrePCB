@@ -59,6 +59,9 @@ public:
   explicit FirstRunWizard(QWidget* parent = 0) noexcept;
   ~FirstRunWizard() noexcept;
 
+  // Setters
+  void setWorkspacePath(const FilePath& fp) noexcept;
+
   // Getters
   bool     getCreateNewWorkspace() const noexcept;
   FilePath getWorkspaceFilePath() const noexcept;
